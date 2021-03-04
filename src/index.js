@@ -13,7 +13,7 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 app.use(express.static(publicDirectoryPath))
 
 app.get('/', (req, res) => {
-    res.sendFile('index')
+    res.render('index')
 })
 
 app.listen(port, () => {
